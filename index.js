@@ -30,4 +30,7 @@ const getDeck = () => {
   return deck;
 };
 
-console.log(getDeck());
+const getRandomCard = () =>
+  getDeck()[Math.floor(Math.random() * getDeck.length)];
+const randomCard = getRandomCard();
+console.log(randomCard);
