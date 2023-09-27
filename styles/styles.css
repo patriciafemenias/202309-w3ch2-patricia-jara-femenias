@@ -32,6 +32,7 @@ button {
 .header {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -45,6 +46,12 @@ button {
   width: 50%;
 }
 
+.title-icon {
+  align-items: center;
+  padding: 10px;
+  width: 7rem;
+}
+
 .cards-container {
   display: flex;
   width: 100%;
@@ -53,15 +60,69 @@ button {
   padding: 50px;
 }
 
-.card {
+.left-card {
   width: 334px;
   height: 500px;
   border-radius: 15px;
   border: 1px solid;
   background-image: url(https://previews.123rf.com/images/bobyramone/bobyramone1206/bobyramone120600016/14167526-playing-card-back-side-60x90-mm.jpg);
   background-size: contain;
+  box-shadow: 20px 20px #0000005f;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.right-card {
+  width: 334px;
+  height: 500px;
+  border-radius: 15px;
+  border: 1px solid;
+  background-color: #fff;
+  box-shadow: 20px 20px #0000005f;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.card-top {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 6rem;
+}
+
+.card-middle {
+  color: red;
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 7rem;
+}
+
+.card-botton {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  grid-column: 3;
+  grid-row: 3;
+  font-size: 6rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .button {
   font-family: var(--main-font-family);
+  font-size: 20px;
+  background-color: #fff;
+  border: 30px;
+  border-radius: 20px;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
 }

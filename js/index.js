@@ -18,6 +18,7 @@ const cardSuits = ["♥", "♦", "♣", "♠"];
 
 const getDeck = () => {
   const deck = [];
+
   cardValues.forEach((cardValues, cardPosition) => {
     cardSuits.forEach((cardSuits) => {
       deck.push({
@@ -27,10 +28,13 @@ const getDeck = () => {
       });
     });
   });
+
   return deck;
 };
 
 const getRandomCard = () =>
   getDeck()[Math.floor(Math.random() * getDeck.length)];
-const randomCard = getRandomCard();
-console.log(randomCard);
+
+const randomUserCard = getRandomCard();
+
+const randomComputerCard = getRandomCard();
