@@ -21,9 +21,9 @@ const getDeck = () => {
   cardValues.forEach((cardValues, cardPosition) => {
     cardSuits.forEach((cardSuits) => {
       deck.push({
-        cardName: cardValues,
-        cardSuit: cardSuits,
-        value: cardPosition + 2,
+        name: cardValues,
+        suit: cardSuits,
+        score: cardPosition + 2,
       });
     });
   });
