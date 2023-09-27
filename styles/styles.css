@@ -21,3 +21,47 @@ button {
   font: inherit;
   background-color: inherit;
 }
+
+.full-game-comtainer {
+  height: 100vw;
+  padding: 20px;
+  background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-dark-green-solid-color-background.jpg);
+  background-size: contain;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: 70px;
+  color: #fff;
+  text-shadow: 5px 5px #000;
+  text-align: center;
+  padding: 40px;
+  width: 50%;
+}
+
+.cards-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.card {
+  width: 334px;
+  height: 500px;
+  border-radius: 15px;
+  border: 1px solid;
+  background-image: url(https://previews.123rf.com/images/bobyramone/bobyramone1206/bobyramone120600016/14167526-playing-card-back-side-60x90-mm.jpg);
+  background-size: contain;
+}
+
+.button {
+  font-family: var(--main-font-family);
+}
