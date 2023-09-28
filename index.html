@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="index.js"></script>
+  <script src="js/index.js" defer></script>
   <title>Greater or smaller</title>
 </head>
 
@@ -21,25 +21,29 @@
       <h1 class="title">Greater or Smaller?</h1>
       <img class="title-icon" src="images/pica.png" alt="pica icon" width="100%">
     </header>
-    <main>
+    <main class="main-container hidden">
       <div class="cards-container">
-        <div class="left-card">
-          <span class="card-top">A</span>
-          <span class="card-middle">♥</span>
-          <span class="card-botton">A</span>
+        <div class="user-card">
+          <span class="card-top"></span>
+          <span class="card-middle"></span>
+          <span class="card-botton"></span>
         </div>
-        <div class="right-card"></div>
+        <div class="computer-card back-card">
+          <span class="card-top"></span>
+          <span class="card-middle"></span>
+          <span class="card-botton"></span>
+        </div>
       </div>
       <span hidden></span>
       <div class="buttons-container">
         <ul>
-          <li><button class="button">Greater</button></li>
-          <li><button class="button">Smaller</button></li>
+          <li><button class="button greater-button">Greater</button></li>
+          <li><button class="button smaller-button">Smaller</button></li>
         </ul>
       </div>
+    </main>
+    <div><button class="button start-button">Start</button></div>
   </div>
-  </main>
-  <div><button class="start-button">Start</button></div>
 </body>
 
 </html>
