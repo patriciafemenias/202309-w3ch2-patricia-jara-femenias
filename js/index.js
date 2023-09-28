@@ -65,11 +65,13 @@ startButton.addEventListener("click", (event) => {
 greaterButton.addEventListener("click", (event) => {
   computerCard.classList.remove("back-card");
   setCard(computerCard, randomComputerCard);
+  document.querySelector(".feedback").textContent = "Greater😊";
 });
 
 smallerButton.addEventListener("click", (event) => {
   computerCard.classList.remove("back-card");
   setCard(computerCard, randomComputerCard);
+  document.querySelector(".feedback").textContent = "Smaller😢";
 });
 
 cardTop.textContent = "A";
