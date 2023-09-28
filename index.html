@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="full-game-comtainer">
+  <div class="full-game-container ">
     <header class="header">
       <img class="title-icon" src="images/pica.png" alt="pica icon" width="100%">
       <h1 class="title">Greater or Smaller?</h1>
@@ -23,21 +23,23 @@
     </header>
     <main>
       <div class="cards-container">
-        <div class="left-card"></div>
-        <div class="right-card">
+        <div class="left-card">
           <span class="card-top">A</span>
           <span class="card-middle">♥</span>
           <span class="card-botton">A</span>
         </div>
+        <div class="right-card"></div>
       </div>
       <span hidden></span>
       <div class="buttons-container">
-        <button hidden>Start</button>
-        <button class="button">Greater</button>
-        <button class="button">Smaller</button>
+        <ul>
+          <li><button class="button">Greater</button></li>
+          <li><button class="button">Smaller</button></li>
+        </ul>
       </div>
-    </main>
   </div>
+  </main>
+  <div><button class="start-button">Start</button></div>
 </body>
 
 </html>

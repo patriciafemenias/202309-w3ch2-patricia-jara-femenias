@@ -1,7 +1,7 @@
 :root {
   --main-font-family: "Montserrat", sans-serif;
   --main-font-size: 20px;
-  --main-color: #000000;
+  --main-color: #000;
   --main-padding: 10px;
 }
 
@@ -16,13 +16,20 @@ h1 {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
 button {
   border: none;
   font: inherit;
   background-color: inherit;
 }
 
-.full-game-comtainer {
+.full-game-container {
   height: 100vw;
   padding: 20px;
   background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-dark-green-solid-color-background.jpg);
@@ -40,7 +47,7 @@ button {
   font-weight: bold;
   font-size: 70px;
   color: #fff;
-  text-shadow: 5px 5px #000;
+  text-shadow: 5px 5px var(--main-color);
   text-align: center;
   padding: 40px;
   width: 50%;
@@ -60,7 +67,7 @@ button {
   padding: 50px;
 }
 
-.left-card {
+.right-card {
   width: 334px;
   height: 500px;
   border-radius: 15px;
@@ -73,7 +80,7 @@ button {
   grid-template-rows: repeat(3, 1fr);
 }
 
-.right-card {
+.left-card {
   width: 334px;
   height: 500px;
   border-radius: 15px;
@@ -96,7 +103,7 @@ button {
 }
 
 .card-middle {
-  color: red;
+  color: #ff0000;
   grid-column: 2;
   grid-row: 2;
   font-size: 7rem;
@@ -119,10 +126,15 @@ button {
 .button {
   font-family: var(--main-font-family);
   font-size: 20px;
-  background-color: #fff;
-  border: 30px;
+  background-color: #c890906e;
+  font-weight: bold;
+  border: 5px solid var(--main-color);
   border-radius: 20px;
   justify-content: space-around;
   margin: 20px;
   padding: 20px;
+}
+
+.hidden {
+  visibility: hidden;
 }
