@@ -67,20 +67,25 @@ button {
   padding: 50px;
 }
 
-.right-card {
+.back-card,
+.computer-card {
   width: 334px;
   height: 500px;
   border-radius: 15px;
   border: 1px solid;
-  background-image: url(https://previews.123rf.com/images/bobyramone/bobyramone1206/bobyramone120600016/14167526-playing-card-back-side-60x90-mm.jpg);
-  background-size: contain;
   box-shadow: 20px 20px #0000005f;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  background-color: #fff;
 }
 
-.left-card {
+.back-card {
+  background-image: url(https://previews.123rf.com/images/bobyramone/bobyramone1206/bobyramone120600016/14167526-playing-card-back-side-60x90-mm.jpg);
+  background-size: contain;
+}
+
+.user-card {
   width: 334px;
   height: 500px;
   border-radius: 15px;
@@ -133,8 +138,12 @@ button {
   justify-content: space-around;
   margin: 20px;
   padding: 20px;
+  cursor: pointer;
+}
+
+.start-button {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
