@@ -187,3 +187,9 @@ button:hover {
 .hidden {
   display: none;
 }
+
+.buttons-subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
