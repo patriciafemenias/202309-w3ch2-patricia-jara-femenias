@@ -37,7 +37,7 @@ button {
 .full-game-container {
   display: flex;
   width: 100%;
-  min-height: 1000px;
+  min-height: 100vh;
   padding: 20px;
   background-image: url(https://wallpapercave.com/wp/wp2557268.png);
   background-size: cover;
