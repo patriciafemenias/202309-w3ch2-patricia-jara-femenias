@@ -44,6 +44,7 @@ button {
   background-position: center center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -172,8 +173,15 @@ button {
 button:hover {
   background-color: #ffd700;
 }
+
+.start-button-container {
+  display: flex;
+}
+
 .start-button {
   text-align: center;
+  font-size: 40px;
+  display: flex;
 }
 
 .hidden {
