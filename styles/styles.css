@@ -88,7 +88,7 @@ button {
   width: 334px;
   height: 500px;
   border-radius: 15px;
-  border: 1px solid;
+  border: none;
   box-shadow: 20px 20px #0000009a;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -107,7 +107,7 @@ button {
   width: 334px;
   height: 500px;
   border-radius: 15px;
-  border: 1px solid;
+  border: none;
   background-color: var(--main-secundary-color);
   box-shadow: 20px 20px #0000009a;
   display: grid;
@@ -126,7 +126,6 @@ button {
 }
 
 .card-middle {
-  color: #ff0000;
   grid-column: 2;
   grid-row: 2;
   font-size: 7rem;
@@ -192,4 +191,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.red {
+  color: #ff0000;
 }

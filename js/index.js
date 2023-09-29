@@ -51,6 +51,10 @@ const setCard = (element, card) => {
   element.querySelector(".card-top").textContent = card.name;
   element.querySelector(".card-middle").textContent = card.suit;
   element.querySelector(".card-botton").textContent = card.name;
+
+  if (card.suit === "♥" || card.suit === "♦") {
+    element.classList.add("red");
+  }
 };
 
 const randomUserCard = getRandomCard();
